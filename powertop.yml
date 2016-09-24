@@ -2,6 +2,7 @@
 - hosts: 127.0.0.1
   user: jayakarthi
   sudo: true
+  uses_shell: true
   gather_facts: no
   tasks:
     - name: powertop tuning
