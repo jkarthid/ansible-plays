@@ -1,6 +1,5 @@
 ---
 - hosts: 127.0.0.1
-  connection: 127.0.0.1
   gather_facts: no
   tasks:
     - name: powertop tuning
