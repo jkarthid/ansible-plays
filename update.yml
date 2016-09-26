@@ -5,7 +5,7 @@
   gather_facts: no
   tasks:
      - name: System update
-       apt: update_cache=yes
+       apt: upgrade=dist
        sudo: yes
 
 #    - name: System update
