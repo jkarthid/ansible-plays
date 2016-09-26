@@ -5,12 +5,12 @@
 # gather_facts: no
   tasks:
      - name: install vagrant
-       apt: name=vagrant update_cache=yes
+       apt: name=vagrant update_cache=yes state=present
        sudo: yes
 
-     - name: system update
-       apt: update_cache=yes
-       sudo: yes
+#     - name: system update
+#       apt: update_cache=yes
+#       sudo: yes
 
 #     - name: System upgrade
 #       apt: upgrade=dist
