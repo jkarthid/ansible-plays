@@ -1,0 +1,9 @@
+---
+- hosts: 127.0.0.1 
+  user: jayakarthi
+  sudo: true
+# gather_facts: no
+  tasks:
+     - name: System update
+       apt: name=vagrant update_cache=yes
+       sudo: yes
