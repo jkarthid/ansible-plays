@@ -4,7 +4,7 @@
   sudo: true
 # gather_facts: no
   tasks:
-     - name: System update
+     - name: vagrant-lxc installation and cache update
        apt: name=vagrant-lxc update_cache=yes
        sudo: yes
        with_items:
