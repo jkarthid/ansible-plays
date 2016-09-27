@@ -3,10 +3,10 @@
   user: jayakarthi
   sudo: true
   gather_facts: no
+  update_apt_cache: true
   tasks:
      - name: System update
-       update_apt_cache: true
-       #apt: update_cache=yes
+       apt: update_cache=yes
        sudo: yes
 
 #    - name: System update
