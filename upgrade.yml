@@ -1,0 +1,8 @@
+---
+- hosts: all
+  user: jayakarthi
+  sudo: true
+  gather_facts: no
+  tasks:
+     - name: System ugprade
+       apt: upgrade=full state=latest
