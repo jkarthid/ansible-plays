@@ -2,6 +2,8 @@
 - hosts: all
   user: jayakarthi
   sudo: true
+  vars_files:
+     - secret
   gather_facts: no
   tasks:
      - name: System ugprade
