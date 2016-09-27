@@ -1,9 +1,7 @@
 ---
-- hosts: all
-  user: jayakarthi
+- user: jayakarthi
   sudo: true
   gather_facts: no
-  update_apt_cache: true
   tasks:
      - name: System update
        apt: update_cache=yes
