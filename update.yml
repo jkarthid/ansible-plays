@@ -1,5 +1,6 @@
 ---
-- user: jayakarthi
+- hosts: all
+  user: jayakarthi
   sudo: true
   gather_facts: no
   tasks:
